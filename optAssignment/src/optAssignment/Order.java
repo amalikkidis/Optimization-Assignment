@@ -1,12 +1,7 @@
 
- 
 package optAssignment;
 
-/**
- * @author alexa
- *
- */
-public class Order {
+public class Order implements Comparable <Order>{
 
 	boolean dark; 
 	double quantity;
@@ -22,6 +17,20 @@ public class Order {
 	@Override
 	public String toString() {
 		return "Order [dark=" + dark + ", quantity=" + quantity + ", ID=" + ID + "]";
+	}
+
+	@Override
+	public int compareTo(Order o) {
+		if(this.quantity < o.quantity) 
+		{
+			return 1;
+		}
+		else if(this.quantity > o.quantity)
+		{
+			return -1;
+		}
+		else
+			return 0;
 	} 
 }
 
