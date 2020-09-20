@@ -162,7 +162,7 @@ public class main {
 	public static void main(String[] args) {
 		
 		ArrayList<Order> orders = new ArrayList<>(); 
-        int bday = 19041998; 
+        int bday = 19092000; 
         Random ran = new Random(bday);
         int totOrders = 100; 
         for (int i = 0 ; i < totOrders; i++) 
